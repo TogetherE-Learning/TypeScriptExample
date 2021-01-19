@@ -1,6 +1,6 @@
 namespace mod03 {
     class Employee {
-       private Id: number;
+        private Id: number;
         name: string;
         constructor(id: number, name: string) {
             this.Id = id;
@@ -11,8 +11,8 @@ namespace mod03 {
         }
     }
     let emp: Employee = new Employee(1, "aaa");
-   // console.log(emp.Id,emp.name);
-   console.log(emp.name,emp.getInfo());
-   
+    // console.log(emp.Id,emp.name);
+    console.log(emp.name, emp.getInfo());
+
 
 }
