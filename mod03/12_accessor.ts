@@ -1,10 +1,8 @@
 namespace mod03 {
     class Employee {
-      
-        // constructor(private id: number,private name: string) {
-          
-        // }
-
+        
+        //直接輸入 prop 可產生 get set 方法
+        //prop
         name!:string;
         constructor(private id: number, name: string) {
           this.Name=name;
