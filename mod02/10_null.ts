@@ -5,7 +5,7 @@
 let i:number|null=10; //union type
  i=null;
 
- //===========================
+//===========================
 //  let j:number;
 //  console.log(j);
 
