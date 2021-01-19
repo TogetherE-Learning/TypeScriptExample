@@ -1,2 +1,3 @@
-let num:number = 100;
-console.log(num + 100);
+let i:number=100;
+// i="aaa";
+console.log(i+100);
