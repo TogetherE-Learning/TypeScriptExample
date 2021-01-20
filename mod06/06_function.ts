@@ -4,4 +4,6 @@ namespace mod06{
     } 
     printData<number>(100);
     printData<string>("aaa");
+    printData(90);
+    printData("bbb");
 }
