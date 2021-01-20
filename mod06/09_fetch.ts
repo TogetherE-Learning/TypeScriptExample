@@ -1,11 +1,12 @@
 // npm init -y
 // npm i --save isomorphic-fetch es6-promise
 
-import "isomorphic-fetch";
+// import "isomorphic-fetch";
 
 namespace mod06{
     function callAPI() {
-        fetch("https://www.google.com")
+        // fetch("https://www.google.com")
+        fetch("aaa.txt")
             .then(response=>response.text())
             .then(result=>console.log(result));
     }
