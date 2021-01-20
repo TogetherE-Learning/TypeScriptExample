@@ -1,9 +1,22 @@
 namespace mod06{
-    function printData<T>(p: T): void {
-        console.log(p)
+    interface Animal{
+        run : string
+    }
+    class Cat implements Animal{
+        constructor(public run:string){
+
+        }
+    }
+    class Person implements Animal{
+        constructor(public run:string){
+
+        }
+    }
+    function printData<T extends Cat>(p: T): void {
+        console.log(p.run)
     } 
-    printData<number>(100);
-    printData<string>("aaa");
-    printData(90);
-    printData("bbb");
+    let c = new Cat("跑起來!!!!");
+    let p = new Person("努力跑QQ!!");
+    printData(c);
+    printData(p);
 }
