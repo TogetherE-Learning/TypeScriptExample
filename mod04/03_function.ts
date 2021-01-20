@@ -1,4 +1,4 @@
-namespace mod03{
+namespace mod04{
     interface MathFunction{
         (x:number,y:number):number;
     }
