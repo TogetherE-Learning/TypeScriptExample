@@ -11,3 +11,7 @@ namespace HR{
 //Immediately Invoked Function Expression(IIFE)
 let emp=new HR.Employee(1,"aaa");
 console.log(emp.getInfo());
+
+import MyEmployee=HR.Employee;
+let emp2=new MyEmployee(2,"bbb");
+console.log(emp2.getInfo());
