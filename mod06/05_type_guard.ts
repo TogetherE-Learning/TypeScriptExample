@@ -1,9 +1,11 @@
 namespace mod06{
-    interface Cat {
+    interface Animal{
         walk(): void;
     }
-    interface Person {
-        walk(): void;
+    interface Cat extends Animal{
+        
+    }
+    interface Person extends Animal  {
         work(): void;
     }
 
