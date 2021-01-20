@@ -12,5 +12,5 @@ namespace mod06{
     }
 
     callAPI();
-    console.log(1);
+    console.log(4);
 }
