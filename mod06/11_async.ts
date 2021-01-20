@@ -5,7 +5,9 @@ namespace mod06 {
         let result = await response.text();
         console.log(result);
     }
-
-    callAPI();
-    console.log(1);
+    async function main(){
+        await callAPI();
+        console.log(1);
+    }
+    main();
 }
