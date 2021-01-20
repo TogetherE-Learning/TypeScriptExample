@@ -5,7 +5,13 @@ interface IEmployee {
 interface ISales {
     bonus: number;
 }
-type Sales = IEmployee & ISales;
+//class 實作兩個 interface
+class Sales implements ISales , IEmployee{
+    constructor(public id: number,public name: string,public bonus: number){
+        
+    }
+}
+//type Sales = IEmployee & ISales;
 
 let s: Sales = {
     id: 1,
