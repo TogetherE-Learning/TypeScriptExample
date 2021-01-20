@@ -1,5 +1,5 @@
 export let projectName = "HR Management";
-export class Employee {
+export default class Employee {
   constructor(public empId: number, public empName: string) {
   }
   getInfo() {
