@@ -1,4 +1,4 @@
-function getColor(c: string | { color: string }) {
+function getColor(c: string | IColor) {
     if (typeof c === "string") {
         console.log(c.toUpperCase());
     } else {
@@ -6,4 +6,15 @@ function getColor(c: string | { color: string }) {
     }
 }
 getColor("red");
-getColor({ color: "green" });
+interface IColor{
+    color:string
+}
+class Color implements IColor{
+    constructor(public color= "green", name="test"){
+
+    }
+}
+let i:IColor = { color: "green" }
+let j:Color = new Color("red","test")
+getColor(i);
+getColor(j);
